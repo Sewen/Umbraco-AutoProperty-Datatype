@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>Sewen.DataType.AutoProperty.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>Sewen.DataType.AutoProperty.dll</orgName>
+    </file>
+    <file>
+      <guid>Sewen.DataType.AutoProperty.Web.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>Sewen.DataType.AutoProperty.Web.dll</orgName>
+    </file>
+    <file>
+      <guid>AutoProperty.js</guid>
+      <orgPath>/scripts/AutoProperty</orgPath>
+      <orgName>AutoProperty.js</orgName>
+    </file>
+    <file>
+      <guid>jquery.autocomplete.css</guid>
+      <orgPath>/scripts/jQuery/autocomplete</orgPath>
+      <orgName>jquery.autocomplete.css</orgName>
+    </file>
+    <file>
+      <guid>jquery.autocomplete.min.js</guid>
+      <orgPath>/scripts/jQuery/autocomplete</orgPath>
+      <orgName>jquery.autocomplete.min.js</orgName>
+    </file>
+    <file>
+      <guid>AutoPropertyService.asmx</guid>
+      <orgPath>/umbraco/webservices/AutoProperty</orgPath>
+      <orgName>AutoPropertyService.asmx</orgName>
+    </file>
+    <file>
+      <guid>AutoPropertyService.asmx.cs</guid>
+      <orgPath>/umbraco/webservices/AutoProperty</orgPath>
+      <orgName>AutoPropertyService.asmx.cs</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>Sewen.DataType.AutoProperty</name>
+      <version>1.0</version>
+      <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+      <url>http://www.sewen.se/umbraco-packages/autoproperty.aspx</url>
+      <requirements>
+        <major>3</major>
+        <minor>0</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Fredrik Sewén</name>
+      <website>http://www.sewen.se</website>
+    </author>
+    <readme><![CDATA[AutoProperty is a package that takes values from the property that you are editing and displays them in an autocomplete textbox. 
+
+This is good if you have many nodes of the same type that will be filled with "same" content. For example a product list where some properties will be same as other products.
+
+Package is tested and working for:
+-Umbraco 4.5.2
+
+Prerequisits:
+You'll have to allow HttpGet in webServices-section in web.config to allow the webservice to be called with jquery.get()
+
+    &lt;webServices&gt;
+      &lt;protocols&gt;
+        &lt;add name="HttpGet" /&gt;
+      &lt;/protocols&gt;
+    &lt;/webServices&gt;
+
+Author: 
+- Fredrik Sewén]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes>
+    <DataType Name="AutoProperty" Id="ec3378f6-f14e-4a97-b705-186af646080f" Definition="42327dca-8c5b-424b-8895-db0726b186f2">
+      <PreValues>
+        <PreValue Id="9" Value="|" />
+      </PreValues>
+    </DataType>
+  </DataTypes>
+</umbPackage>
